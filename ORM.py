@@ -1,5 +1,5 @@
 #!/usr/bin/env/python3
-# -*- coding usf-8 -*-
+# -*- coding:utf-8 -*-
 from sqlalchemy import Column,String,create_engine,ForeignKey
 from sqlalchemy.orm import sessionmaker,relationship
 from sqlalchemy.ext.declarative import declarative_base

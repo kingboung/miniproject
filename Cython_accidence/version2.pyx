@@ -1,7 +1,6 @@
 """
 这个版本混搭C和Python
 """
-#include<Python.h>
 
 import math
 

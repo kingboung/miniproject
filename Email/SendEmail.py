@@ -1,4 +1,4 @@
-#!usr/bin/env python3
+#!/usr/bin/env python3
 # -*- coding:utf-8 -*-
 """
 # 版本一：构造纯文本邮件并发送

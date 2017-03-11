@@ -1,4 +1,4 @@
-#!usr/bin.env python3
+#!/usr/bin/env python3
 # -*- coding:utf-8 -*-
 
 # 默认端口是5000，访问地址是http://localhost:5000/

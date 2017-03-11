@@ -1,5 +1,5 @@
-#!usr/bin/envy python3
-# -*- coding utf-8 -*-
+#!/usr/bin/envy python3
+# -*- coding:utf-8 -*-
 
 from PIL import Image
 
