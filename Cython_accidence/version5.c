@@ -1,6 +1,6 @@
 #include <math.h>
 #include <stdio.h>
-//#include <time.h>
+#include <time.h>
 #define NUM 500000
 
 //这个版本C语言实现
@@ -21,17 +21,22 @@ float great_circle(float lon1,float lat1,float lon2,float lat2){
 int main(){
     int i;
     float x;
-    //clock_t start, finish;
-    //double Total_time;
-    //start = clock();
+    clock_t start, finish;
+    double Total_time;
+    start = clock();
     for(i=0;i<=NUM;i++)
         x=great_circle(-72.345,34.323,-61.823,54.826);
-    //finish = clock();
-    //Total_time = (double)(finish-start) / CLOCKS_PER_SEC;
-    //printf("%f sec",Total_time);
+    finish = clock();
+    Total_time = (double)(finish-start) / CLOCKS_PER_SEC;
+    printf("%f sec",Total_time);
+    printf("\n");
     printf("%f",x);
 }
 
+//方式一：
+//->Linux环境下:gcc -lm -octest version5.c   （当前路径生成ctest.exe）
+//->time ./ctest  （测试该模块运行所需时间，当然把代码注释部分加进来运行也能起到相同的效果）
 
-//Linux环境下:gcc -lm -octest version5.c   （当前路径生成ctest.exe）
-//time ./ctest  （测试该模块运行所需时间，当然把代码注释部分加进来运行也能起到相同的效果）
+//方式二：
+//->Linux环境下:gcc -o version5 version5.c   （当前路径生成version5.exe）
+//->./version5  （运行该模块）

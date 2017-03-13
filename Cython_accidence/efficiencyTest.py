@@ -16,4 +16,8 @@ print('python+c版本用时:'+str(t.timeit(num))+'sec')
 
 t=timeit.Timer("v3.great_circle(%f,%f,%f,%f)"%(lon1,lat1,lon2,lat2),
                "import version3 as v3")
-print('纯c版本用时:'+str(t.timeit(num))+'sec')
+print('纯c版本(Python函数调用)用时:'+str(t.timeit(num))+'sec')
+
+t=timeit.Timer("v4.great_circle(%f,%f,%f,%f,%i)"%(lon1,lat1,lon2,lat2,num),
+               "import version4 as v4")
+print('纯c版本(C函数调用)用时:'+str(t.timeit(1))+'sec')
