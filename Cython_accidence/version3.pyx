@@ -1,5 +1,5 @@
 """
-这个版本用纯c实现
+这个版本用纯c实现（Python函数调用）
 """
 
 cdef extern from "math.h":
@@ -13,8 +13,8 @@ def great_circle(float lon1,float lat1,float lon2,float lat2):
     cdef float x=pi/180.0
     cdef float a,b,theta,c
 
-    a=(90-lat1)/(x)
-    b=(90-lat2)/(x)
+    a=(90-lat1)*(x)
+    b=(90-lat2)*(x)
     theta=(lon2-lon1)*(x)
     c=acosf((cosf(a)*cosf(b))+(sinf(a)*sinf(b)*cosf(theta)))
 
