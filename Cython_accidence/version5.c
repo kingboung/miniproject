@@ -35,7 +35,7 @@ int main(){
 
 //方式一：
 //->Linux环境下:gcc -lm -octest version5.c   （当前路径生成ctest.exe）
-//->time ./ctest  （测试该模块运行所需时间，当然把代码注释部分加进来运行也能起到相同的效果）
+//->time ./ctest  （测试该模块运行所需时间）
 
 //方式二：
 //->Linux环境下:gcc -o version5 version5.c   （当前路径生成version5.exe）
